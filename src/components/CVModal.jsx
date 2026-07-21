@@ -17,7 +17,7 @@ export default function CVModal({ open, onClose }) {
         <div className="flex items-center justify-between border-b border-slate-800 bg-slate-900/90 px-4 py-3">
           <div className="font-semibold text-slate-100">Arpan Das — Resume</div>
           <div className="flex gap-2">
-            <a href="https://drive.google.com/file/d/1h7gkhISg36sTF8Vz8NxcV3T5ZNoS1rbB/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950">
+            <a href="https://drive.google.com/file/d/14KZOgVekKO5X_Z-MFw-m-qz2cQ9-8Y0Q/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950">
               Download <FiDownload />
             </a>
             <button onClick={onClose} className="rounded-full p-2 text-slate-300 transition hover:bg-slate-800" aria-label="Close resume modal">

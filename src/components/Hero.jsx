@@ -56,7 +56,7 @@ export default function Hero() {
             <button onClick={scrollToProjects} className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:scale-105">
               View My Work <FiChevronRight />
             </button>
-              <a href="https://drive.google.com/file/d/1h7gkhISg36sTF8Vz8NxcV3T5ZNoS1rbB/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950">
+              <a href="https://drive.google.com/file/d/14KZOgVekKO5X_Z-MFw-m-qz2cQ9-8Y0Q/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-3 py-2 text-sm font-semibold text-slate-950">
             {/* <button id="cv-button" onClick={openCv} className="inline-flex items-center gap-2 rounded-full border border-slate-400/60 bg-white/70 px-6 py-3 font-semibold text-slate-800 transition hover:scale-105 dark:bg-slate-900/70 dark:text-slate-100"> */}
               Download CV <FiDownload />
             {/* </button> */}
