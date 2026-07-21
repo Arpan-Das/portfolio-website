@@ -25,7 +25,7 @@ export default function CVModal({ open, onClose }) {
             </button>
           </div>
         </div>
-        <iframe src="src/assets/ArpanDas_CV_2.1.pdf" title="Arpan Das Resume" className="h-full w-full" />
+        <iframe src="/ArpanDas_CV_2.1.pdf" title="Arpan Das Resume" className="h-full w-full" />
       </div>
     </div>
   )

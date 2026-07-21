@@ -60,7 +60,7 @@ export const personalProjects = [
     outcome: 'High-accuracy context matching through vector similarity search with grounded answers from Groq LLMs.',
     techStack: ['LangChain', 'LanceDB', 'Cohere', 'Groq', 'Python'],
     demoUrl: 'https://ask-your-docs-five.vercel.app/',
-    githubUrl: 'https://github.com/arpandas/rag-chatbot',
+    githubUrl: 'https://github.com/Arpan-Das/RAG-Frontend',
     company: 'Personal',
   },
   {
@@ -73,7 +73,7 @@ export const personalProjects = [
     outcome: 'Fully functional real-time multiplayer gameplay with clean move validation.',
     techStack: ['Node.js', 'WebSocket', 'chess.js'],
     demoUrl: '#',
-    githubUrl: 'https://github.com/arpandas/chess-platform',
+    githubUrl: 'https://github.com/Arpan-Das/chess',
     company: 'Personal',
   },
 ]

@@ -101,9 +101,11 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="mt-7 flex flex-wrap gap-3">
-                    <button onClick={() => setActiveProject(project)} className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-4 py-2 font-semibold text-slate-950 transition hover:scale-105">
-                      Live Demo <FiExternalLink />
-                    </button>
+                    {project.demoUrl != '#' &&
+                      <button onClick={() => setActiveProject(project)} className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-4 py-2 font-semibold text-slate-950 transition hover:scale-105">
+                        Live Demo <FiExternalLink />
+                      </button>
+                    }
                     <a href={project.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 font-semibold text-slate-800 transition hover:scale-105 dark:border-slate-700 dark:text-slate-100">
                       GitHub <FiGithub />
                     </a>
