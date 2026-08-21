@@ -1,16 +1,16 @@
 export const professionalProjects = [  
-  {
-    slug: 'intelligent-document-generation',
-    icon: '📄',
-    title: 'Intelligent Document Generation System',
-    problem: 'Document creation required manual data gathering from multiple databases, causing delays and inconsistency.',
-    whatIBuilt: 'A Canvas App that fetches data from multiple databases, accepts user input for remaining fields, and auto-generates fully formatted Word documents via Encodian Flows Word Connector, with email notifications on completion.',
-    myRole: 'Lead Developer',
-    outcome: '90%+ time savings in document generation; $5.4M net annual benefit to client.',
-    techStack: ['Power Apps (Canvas)', 'Power Automate', 'Dataverse', 'Encodian Flow', 'SharePoint'],
-    deliveryHighlights: ['UAT sign-off with leadership stakeholders', 'Production rollout with 3-stage approval governance'],
-    company: 'TCS',
-  },  
+  // {
+  //   slug: 'intelligent-document-generation',
+  //   icon: '📄',
+  //   title: 'Intelligent Document Generation System',
+  //   problem: 'Document creation required manual data gathering from multiple databases, causing delays and inconsistency.',
+  //   whatIBuilt: 'A Canvas App that fetches data from multiple databases, accepts user input for remaining fields, and auto-generates fully formatted Word documents via Encodian Flows Word Connector, with email notifications on completion.',
+  //   myRole: 'Lead Developer',
+  //   outcome: '90%+ time savings in document generation; $5.4M net annual benefit to client.',
+  //   techStack: ['Power Apps (Canvas)', 'Power Automate', 'Dataverse', 'Encodian Flow', 'SharePoint'],
+  //   deliveryHighlights: ['UAT sign-off with leadership stakeholders', 'Production rollout with 3-stage approval governance'],
+  //   company: 'TCS',
+  // },  
   {
     slug: 'ml-anomaly-detection',
     icon: '📊',

@@ -8,7 +8,10 @@ export default function Achievements() {
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="rounded-[2rem] border border-cyan-400/40 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 p-8 shadow-[0_0_45px_rgba(0,201,255,0.15)]">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="rounded-2xl bg-cyan-500/10 p-3 text-cyan-500"><FiAward className="text-2xl" /></div>
+                            <div className="rounded-2xl bg-cyan-500/10 p-3 text-cyan-500">
+                                {/* <FiAward className="text-2xl" />                             */}
+                                <img src="src\assets\nptel.png" alt="" srcset="" width={90}/>
+                            </div>
                             <div>
                                 <h3 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
                                     NPTEL Course Topper(5%)
