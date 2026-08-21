@@ -9,7 +9,7 @@ const certs = [
     buttonLabel: 'Verify Certificate',
     url: 'https://www.credly.com/badges/f58c8a2d-3c26-4256-b35d-a3106c04c1e5/public_url',
     accent: 'green',
-    logo: 'src/assets/claude-certified-associate-foundations.png'
+    logo: '/claude-certified-associate-foundations.png'
   },
   {
     title: 'AZ-900: Azure Fundamentals',
@@ -17,7 +17,7 @@ const certs = [
     buttonLabel: 'Verify Certificate',
     url: 'https://www.credly.com/badges/5267440f-8d00-4b70-b309-52689ed5075b',
     accent: 'green',
-    logo: 'src/assets/microsoft-certified-azure-fundamentals.png'
+    logo: '/microsoft-certified-azure-fundamentals.png'
   },
   {
     title: 'AI-103: Develop AI Apps and Agents on Azure',
