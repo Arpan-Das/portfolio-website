@@ -41,7 +41,20 @@ function PageTransition({ children }) {
 
 function AppContent() {
   const [cvOpen, setCvOpen] = useState(false)
+  const [toast, setToast] = useState('')
   const location = useLocation()
+
+  useEffect(() => {
+    if (location.state?.toast) {
+      const showToast = window.setTimeout(() => setToast(location.state.toast), 0)
+      window.history.replaceState({}, document.title, window.location.href)
+      const timeout = window.setTimeout(() => setToast(''), 2600)
+      return () => {
+        window.clearTimeout(showToast)
+        window.clearTimeout(timeout)
+      }
+    }
+  }, [location.state])
 
   useEffect(() => {
     if (location.state?.scrollToId) {
@@ -74,6 +87,7 @@ function AppContent() {
       </motion.button>
 
       <AnimatePresence>{cvOpen && <CVModal open={cvOpen} onClose={() => setCvOpen(false)} />}</AnimatePresence>
+      <AnimatePresence>{toast && <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 12 }} className="fixed bottom-6 left-6 z-50 rounded-xl border border-amber-400/30 bg-slate-900 px-4 py-3 text-sm font-medium text-amber-200 shadow-xl">{toast}</motion.div>}</AnimatePresence>
     </div>
   )
 }

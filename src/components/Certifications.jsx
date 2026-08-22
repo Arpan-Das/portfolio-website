@@ -1,5 +1,5 @@
-import { motion, px } from 'framer-motion'
-import { FiAward, FiExternalLink, FiShield } from 'react-icons/fi'
+import { motion } from 'framer-motion'
+import { FiExternalLink, FiShield } from 'react-icons/fi'
 
 
 const certs = [
@@ -46,7 +46,7 @@ export default function Certifications() {
                     { cert.logo == '' ?
                       <FiShield />
                       :
-                      <img src={cert.logo} alt="" srcset="" width={100} />
+                      <img src={cert.logo} alt="" width={100} />
                     }
                   </div>
                   <h3 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">{cert.title}</h3>

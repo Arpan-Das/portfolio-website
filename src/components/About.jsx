@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
 import { FiCheckCircle } from 'react-icons/fi'
 import { useCountUp } from '../hooks/useCountUp'
 
@@ -22,9 +20,6 @@ function StatCard({ stat }) {
 }
 
 export default function About() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
-
   return (
     <section id="about" className="px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
@@ -44,9 +39,14 @@ export default function About() {
             <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
               System Engineer at Tata Consultancy Services with 3.5+ years of experience building ML-based anomaly detection pipelines, LLM-integrated automation, and RAG-based Q&A systems. Actively expanding into FastAPI-based model serving and AWS.
             </p>
+            <div className="mt-6 grid gap-3 border-t border-slate-200/70 pt-5 text-sm dark:border-slate-800 sm:grid-cols-3">
+              <div><span className="block text-xs font-semibold uppercase tracking-wider text-cyan-500">Based in</span><span className="mt-1 block text-slate-700 dark:text-slate-300">India</span></div>
+              <div><span className="block text-xs font-semibold uppercase tracking-wider text-cyan-500">Focus</span><span className="mt-1 block text-slate-700 dark:text-slate-300">ML and GenAI</span></div>
+              <div><span className="block text-xs font-semibold uppercase tracking-wider text-cyan-500">Availability</span><span className="mt-1 block text-slate-700 dark:text-slate-300">Open to opportunities</span></div>
+            </div>
           </motion.div>
 
-          <motion.div ref={ref} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="grid gap-4 sm:grid-cols-2">
+          <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="grid gap-4 sm:grid-cols-2">
             {stats.map((stat) => (
               <StatCard key={stat.label} stat={stat} />
             ))}

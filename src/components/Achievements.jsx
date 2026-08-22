@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { FiAward } from 'react-icons/fi'
 
 export default function Achievements() {
     return (
@@ -10,7 +9,7 @@ export default function Achievements() {
                         <div className="flex items-center gap-3">
                             <div className="rounded-2xl bg-cyan-500/10 p-3 text-cyan-500">
                                 {/* <FiAward className="text-2xl" />                             */}
-                                <img src="/nptel.png" alt="" srcset="" width={90}/>
+                                <img src="/nptel.png" alt="" width={90}/>
                             </div>
                             <div>
                                 <h3 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
